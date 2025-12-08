@@ -7,7 +7,7 @@ export default function Options({ onLeaveFeedback, onReset, totalFeedback }) {
       <button onClick={() => onLeaveFeedback("neutral")}>Neutral</button>
       <button onClick={() => onLeaveFeedback("bad")}>Bad</button>
 
-      {/* Reset butonu sadece feedback varsa görünür */}
+      {/*  Reset butonu sadece feedback varsa görünür */ }
       {totalFeedback > 0 && (
         <button onClick={onReset}>Reset</button>
       )}
