@@ -1,9 +1,13 @@
 // vite.config.js
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react' // << Bu eklenti hayati
+import react from '@vitejs/plugin-react'
+
+// Depo adınızı buraya ekleyin!
+// Genellikle '/<REPO_ADI>/' şeklinde olmalıdır.
+const BASE_PATH = "/goit-react-hw-02/"; 
 
 export default defineConfig({
-  plugins: [react()], // << Doğru yüklenmeli
-  // ... diğer ayarlar
-  base:"/goit-react-hw-02/"
+  // **BASE YOLU EKLENDİ**
+  base: BASE_PATH, 
+  plugins: [react()],
 })
