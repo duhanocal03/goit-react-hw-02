@@ -1,3 +1,4 @@
+import './option.css'
 export default function Options({ onLeaveFeedback, onReset, totalFeedback }) {
   return (
     <div>
